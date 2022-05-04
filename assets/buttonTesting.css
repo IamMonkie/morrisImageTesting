@@ -106,7 +106,7 @@ img:hover {
   stroke-linejoin: bevel;
 }
 .w,
-.a`,
+.a,
 .x,
 .y {
   stroke-width: 1.0062px;
@@ -117,10 +117,10 @@ img:hover {
 .ag {
   filter: url(#e);
 }
-.a` {
+.a {
   stroke: #000;
 }
-.a`,
+.a,
 .y {
   fill: none;
 }
