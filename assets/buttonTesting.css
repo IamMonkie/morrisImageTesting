@@ -16,8 +16,10 @@ body {
 }
 
 .container {
+  max-width: 1200px;
+  min-width: 180px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
   /* grid-auto-rows:150px 150px; */
   grid-gap: 1em;
   /* width: 80%; */
@@ -37,6 +39,7 @@ body {
 }
 
 .imageContainer {
+  position: relative;
   width: 150px;
   height: auto;
   padding: 1em;
@@ -57,14 +60,21 @@ img {
   overflow: auto;
   /* box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); */
   -webkit-background-clip: border-box;
+  /* border-radius: 100%; */
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 img:hover {
   fill: green;
   stroke: orange;
   stroke-width: 5px;
+  border-radius: 100%;
   outline: 5px solid magenta;
-  clip-path: url(../assets/Icons/Air\ Settings/airSettingsIcon.svg);
+  /* clip-path: url(../assets/Icons/Air\ Settings/airSettingsIcon.svg); */
+  cursor: pointer;
+}
+img:on-click {
+  outline: yellow;
 }
 
 /* ------------------------------- conveyorSCG ------------------------------ */
