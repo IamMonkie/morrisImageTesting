@@ -28,7 +28,7 @@ body {
   /* background-color: orange; */
   /* column-count: 3; */
   /* column-gap: 1em; */
-  /* text-align: center; */
+  /* justify-items: center;   */
   /* align-items: center; */
   /* justify-content: center; */
   /* display: flex; */
@@ -44,7 +44,6 @@ body {
   height: auto;
   padding: 1em;
   margin: auto;
-  align-items: center;
   align-content: center;
   /* background: url("../Icons/Air\ Settings/airSettings.svg") center no-repeat; */
   /* background-size: 150px; */
