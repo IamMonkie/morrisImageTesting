@@ -2,6 +2,7 @@
 
 :root {
   --primaryColor: rgb(60, 60, 60);
+  --imgSize: 150px;
 }
 * {
   margin: 0;
@@ -13,17 +14,21 @@ body {
   font-family: "poppins", sans-serif;
   color: var(--primaryColor);
   /* background-color: rgb(28, 185, 224); */
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 .container {
   max-width: 1200px;
   min-width: 180px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(var(--imgSize), 1fr));
   /* grid-auto-rows:150px 150px; */
   grid-gap: 1em;
   /* width: 80%; */
   margin: 5px 20px;
+  padding: 10px;
   border: 2px solid black;
   /* background-color: orange; */
   /* column-count: 3; */
@@ -40,7 +45,7 @@ body {
 
 .imageContainer {
   position: relative;
-  width: 150px;
+  width: var(--imgSize);
   height: auto;
   padding: 1em;
   margin: auto;
@@ -75,71 +80,4 @@ img:hover {
 }
 img:on-click {
   outline: yellow;
-}
-
-/* ------------------------------- conveyorSCG ------------------------------ */
-.v {
-  fill: #aaa;
-  stroke-width: 0.5px;
-}
-.v,
-.w,
-.x,
-.y {
-  stroke: #231f20;
-}
-.v,
-.a,
-.x,
-.y {
-  stroke-miterlimit: 10;
-}
-.aa {
-  mix-blend-mode: multiply;
-  opacity: 0.75;
-}
-.ab {
-  fill: #dbdbdb;
-}
-.ac {
-  fill: #bfbfbf;
-}
-.ad {
-  mask: url(#n);
-}
-.ae {
-  isolation: isolate;
-}
-.w {
-  fill: #fff;
-  stroke-linecap: round;
-  stroke-linejoin: bevel;
-}
-.w,
-.a,
-.x,
-.y {
-  stroke-width: 1.0062px;
-}
-.af {
-  mask: url(#g);
-}
-.ag {
-  filter: url(#e);
-}
-.a {
-  stroke: #000;
-}
-.a,
-.y {
-  fill: none;
-}
-.ah {
-  mask: url(#k);
-}
-.ai {
-  mask: url(#d);
-}
-.x {
-  fill: #727272;
 }
