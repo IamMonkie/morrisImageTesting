@@ -5,5 +5,3 @@ var animation = bodymovin.loadAnimation({
   autoplay: true,
   path: "conveyorTest.json",
 });
-
-console.log("Animation Script Loaded");
