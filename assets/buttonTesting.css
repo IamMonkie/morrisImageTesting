@@ -82,5 +82,11 @@ img:on-click {
 }
 
 #bm {
-  width: 250px;
+  /* width: 250px; */
 }
+/*
+#valveIcon002_closed svg path {
+  fill: green;
+  stroke: 5px !important;
+}
+*/
