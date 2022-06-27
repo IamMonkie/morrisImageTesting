@@ -69,18 +69,19 @@ img {
 }
 
 img:hover {
-  fill: green;
-  stroke: orange;
+  /* fill: green; */
+  /* stroke: orange; */
   stroke-width: 5px;
   border-radius: 100%;
   outline: 5px solid rgb(170, 170, 170);
   /* clip-path: url(../assets/Icons/Air\ Settings/airSettingsIcon.svg); */
   cursor: pointer;
 }
+/*
 img:on-click {
   outline: yellow;
 }
-
+*/
 #bm {
   /* width: 250px; */
 }
